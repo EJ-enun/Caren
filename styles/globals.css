@@ -26,10 +26,72 @@ code {
   font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
 }
 
-.container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+/* Add some styles for the container element */
+#container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+/* Add some styles for the card element */
+.card {
+      width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+/* Add some styles for the card image */
+.card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    /* Add some styles for the card details element */
+.card__details {
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+/* Add some styles for the tag element */
+.tag {
+      display: inline-block;
+      margin-right: 10px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      background-color: #e74c3c;
+      color: white;
+    }
+
+/* Add some styles for the name element */
+.name {
+      margin-top: 10px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+/* Add some styles for the button element */
+button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      background-color: #3498db;
+      color: white;
+      cursor: pointer;
+    }
+
+ /* Add some hover effects for the card and button elements */
+.card:hover {
+      transform: scale(1.05);
+    }
+
+button:hover {
+      background-color: #2980b9;
+    }
